@@ -1,0 +1,431 @@
+/* Импорт шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Сброс стандартных стилей, определение собственных базовых стилей. Позиционирование основного контейнера. Вынос часто используемых значений в переменнные. */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth !important; /* Возврат к шапке сайта по кнопке и переключение слайдера */  
+}
+.siteWrapperOuter{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+:root{
+    --prmrygrn: #4BAA00;
+    --bldfw: 700;
+    --rglrfw: 400;
+    --xtrfw: 200;
+    --strngfw: 900;
+    --inndnt: 18px;
+    --oundnt: 150px;
+}
+.flexibleWrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: var(--inndnt);
+    width: 100%;
+}
+h1{
+    font-weight: var(--strngfw);
+    font-size: 96px;
+}
+img, svg{
+    background-repeat: no-repeat;
+    position: relative;
+}
+:hover{
+    -webkit-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+
+/* Основной контейнер с контентом */
+.siteWrapperInner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1140px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: var(--oundnt);
+    margin-bottom:var(--oundnt);
+    font-family: 'Inter', sans-serif;
+    gap: var(--oundnt);
+}
+
+/* Шапка сайта */
+header{
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+}
+.companyLogo{
+    width: 170px;
+    height: 190px;
+}
+.phoneIcon{
+    background-image: url(media/phone.min.svg);
+    right: 18px;
+    height: 70px;
+    width: 70px;
+}
+button{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc; 
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+.btnCall{
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    font-family: inherit;
+    font-size: 48px;
+    font-weight: var(--bldfw);
+    border-radius: 60px;
+    background-color: var(--prmrygrn);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 561px;
+    height: 90px;
+}
+.btnCall:hover{
+    background-color: black;
+}
+.btnCall:hover .phoneIcon{
+    background-image: url(media/phone-hover.min.svg);
+}
+.companyNumber{
+    font-weight: var(--xtrfw);
+    font-style: italic;
+    color: var(--prmrygrn);
+    font-size: 32px;
+}
+.companyNumber:hover{
+    color:black;
+}
+
+/* Слайдер */
+.adventagesSlider{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 18px;
+}
+.adventagesSlides{
+    max-width: 945px;
+    max-height: 465px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    border: 10px solid black;
+    border-radius: 70px;
+}
+.slideSize{
+   display: block;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    
+}
+.sliderNavigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 18px;
+}
+.linkPagination{
+    width: 20px;
+    height: 20px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+.linkPagination:hover{
+    background-color: green;
+}
+
+/* Особенности товаров */
+.choiceItem{
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    font-weight: var(--rglrfw);
+    font-size: 32px;
+}
+.choiceHead{
+    font-weight: var(--bldfw);
+    color: var(--prmrygrn);
+    font-size: 40px;
+}
+.gsPic{
+    width: 369px;
+    height: 369px;
+}
+.choiceNote{
+    font-weight: var(--xtrfw);
+    color: var(--prmrygrn);
+}
+.ecsPic{
+    width: 367px;
+    height: 463px;
+}
+.swPic{
+    width: 368px;
+    height: 533px;
+}
+.filterIcon{
+    width: 338px;
+    height: 338px;
+}
+.salesFilter{
+   -webkit-box-orient: horizontal !important;
+   -webkit-box-direction: normal !important;
+       -ms-flex-direction: row !important;
+           flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.allFilter{
+    background-image: url(media/allFilter.min.svg);
+    width: 261px;
+    height: 296px;
+}
+
+/* Фильтр неактивный */
+.gsFilter{
+    background-image: url(media/gsFilter.min.svg);
+    width: 297px;
+    height: 197px;
+}
+.ecsFilter{
+    background-image: url(media/EcsFilter.min.svg);
+    width: 260px;
+    height: 345px;
+}
+.swFilter{
+    background-image: url(media/swFilter.min.svg);
+    width: 261px;
+    height: 297px;
+}
+.radioSwitch {
+	display: none;
+}
+
+/* Фильтр активный */
+#allSwitch:checked ~ .allFilter{
+    background-image: url(media/allFilterS.min.svg);
+}
+#gsSwitch:checked ~ .gsFilter{
+    background-image: url(media/gsFilterS.min.svg);
+}
+#ecsSwitch:checked ~ .ecsFilter{
+    background-image: url(media/EcsFilterS.min.svg);
+}
+#swSwitch:checked ~ .swFilter{
+    background-image: url(media/swFilterS.min.svg);
+}
+#allSwitch ~ .allItem,
+#gsSwitch ~ .gsItem,
+#ecsSwitch ~ .ecsItem,
+#swSwitch ~ .swItem{
+    display: none;
+}
+#allSwitch:checked ~ .allItem,
+#gsSwitch:checked ~ .gsItem,
+#ecsSwitch:checked ~ .ecsItem,
+#swSwitch:checked ~ .swItem{
+    display: block;
+}
+
+/* Карточки товаров  */
+.filterPic{
+    left: 84px;
+    width: 200px;
+    height: 200px;
+    border-radius: 60px;
+}
+.filterItem{
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    width: 368px;
+    height: 500px;
+    border-radius: 60px;
+    background-color: var(--prmrygrn);
+}
+.flexibleWrapperFilter{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.posPic{
+    text-align: center;
+    font-weight: var(--bldfw);
+    color: white;
+    font-size: 40px;
+}
+
+/* О консультантах и о компании */
+.addInfo{
+    font-weight: var(--rglrfw);
+    font-style: italic;
+    font-size: 40px;
+    color: var(--prmrygrn);
+}
+
+/* Некоторые бренды */
+.brandPic{
+    width: 650px;
+}
+.brandText{
+    font-weight: var(--bldfw);
+    color: var(--prmrygrn);
+    font-size: 40px;
+    font-style: italic;
+}
+
+/* Полезная информация */
+.benefitHead{
+    text-align: center;
+}
+.benefitPic{
+    width: 100%;
+    border-radius: 60px;
+}
+.benefitText{
+    font-weight: var(--rglrfw);
+    font-size: 32px;
+}
+li::marker{
+    color: var(--prmrygrn);
+}
+li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.benefitList{
+    font-weight: var(--bldfw);
+    font-size: 40px;
+    font-style: italic;
+    color: var(--prmrygrn);
+}
+
+/* Форма для подписки на email-рассылки. */
+.companyForm{
+    background-color: var(--prmrygrn);
+    border-radius: 60px;
+    height: 400px;
+    width: 100%;
+}
+.formInfo{
+    font-weight: var(--xtrfw);
+    font-size: 32px;
+    font-style: italic;
+    color: white;
+}
+
+.userField, .submitData{
+    border-radius: 60px;
+    background-color: white;
+    text-align: center;
+}
+.userField{
+    width: 463px;
+    height: 80px;
+}
+.userField::-webkit-input-placeholder{
+    opacity: 30%;
+    font-style: italic;
+}
+.userField::-moz-placeholder{
+    opacity: 30%;
+    font-style: italic;
+}
+.userField:-ms-input-placeholder{
+    opacity: 30%;
+    font-style: italic;
+}
+.userField::-ms-input-placeholder{
+    opacity: 30%;
+    font-style: italic;
+}
+.userField::placeholder{
+    opacity: 30%;
+    font-style: italic;
+}
+.submitData{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: var(--bldfw);
+    font-size: 40px;
+}
+.submitData:hover{
+    border: 3px solid white;
+}
+.userPos{
+   -webkit-box-orient: horizontal !important;
+   -webkit-box-direction: normal !important;
+       -ms-flex-direction: row !important;
+           flex-direction: row !important;
+}
+.submitPos{
+    margin-top: var(--inndnt);
+}

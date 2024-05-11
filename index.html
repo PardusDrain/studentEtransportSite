@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Компания My-giro</title>
+</head>
+
+<body>
+    <div class="siteWrapperOuter">
+        <div class="siteWrapperInner">
+                                    <!-- Шапка сайта -->
+            <header class="flexibleWrapper" id="topHead">
+                <img class="companyLogo" src="media/my-giro.PNG" alt="Логотип компании">
+                <div class="btnCall flexibleWrapper">
+                    <div class="phoneIcon"></div>Заказать
+                    звонок
+                </div>
+                <span class="companyNumber">(+7)995 88 59</span>
+            </header>
+                                    <!-- Слайдер -->
+            <section class="flexibleWrapper">
+                <h1>Наши преимущества</h1>
+                <div class="adventagesSlider">
+                    <div class="adventagesSlides">
+                        <img src="media/slide1.min.svg" alt="Бесплатная и быстрая доставка" id="slide1" class="slideSize">
+                        <img src="media/slide2.min.svg" alt="Выгодные предложения и цены" id="slide2" class="slideSize">
+                        <img src="media/slide3.min.svg" alt="Долгосрочная гарантия" id="slide3" class="slideSize">
+                    </div>
+                    <div class="sliderNavigation">
+                        <a class="linkPagination" href="#slide1"></a>
+                        <a class="linkPagination" href="#slide2"></a>
+                        <a class="linkPagination" href="#slide3"></a>
+                    </div>
+                </div>
+            </section>
+                                    <!-- Особенности товаров -->
+            <section class="flexibleWrapper ">
+                <h1>Что выбрать?</h1>
+                <article class="choiceItem flexibleWrapper">
+                    <img src="media/Gs.WEBP" class="gsPic" alt="Гироскутер">
+                    <p><span class="choiceHead">Гироскутер</span><em class="choiceNote">(на фото модель GT 6.5)</em> —
+                        самый небезопасный вид электротранспорта из предложенных. У гироскутера, в отличии от
+                        электросамоката и сигвея, отсутствует хоть какое-нибудь рулевое управление, потому что
+                        управление гироскутером осуществляется балансом тела пользователя, из чего следует, что он
+                        наименее безопасен. Также, зачастую у гироскутера меньше размер колесной базы, поэтому он также
+                        наименее пригоден для неровных поверхностей. У гироскутера наименьший запас хода. Из плюсов
+                        можно выделить необычный способ управления.</p>
+                </article>
+                <article class="choiceItem flexibleWrapper">
+                    <img src="media/Ecs.WEBP" class="ecsPic" alt="Электросамокат">
+                    <p><span class="choiceHead">Электросамокат</span><em class="choiceNote">(на фото модель HIMO
+                            L2)</em> — самый быстрый и малогабаритный вид электротранспорта, а также самый простой в
+                        освоении относительно двух других видов. Относительно легко может ездить по неровным
+                        поверхностям. Способен развивать более высокую скорость и имеет больший запас хода, чем сигвей и
+                        гироскутер. Электросамокат подходит для тех, кто ищет простой, быстрый и комфортный вид
+                        электротранспорта.</p>
+                </article>
+                <article class="choiceItem flexibleWrapper">
+                    <img src="media/sw.WEBP" class="swPic" alt="Сигвей">
+                    <p><span class="choiceHead">Сигвей</span><em class="choiceNote">(на фото модель мини-сигвея MINI
+                            ROBOT 54V)</em> — эдакая «золотая середина» в предложенной тройке электротранспорта. У
+                        Сигвея имеется рулевое управление, что повышает безопасность вождения. У него больше вариантов
+                        колесной базы, чем у гироскутера и электросамоката, что обеспечивает самую высокую проходимость.
+                        Сигвей имеет наименьшие скоростные характеристики относительно предложенных вариантов
+                        электротранспорта. Сигвей — самый габаритный из предложенной «тройки», но вместе с этим имеет
+                        самую высокую грузоподъемность. Наиболее популярны так называемые мини-сигвеи.</p>
+                </article>
+            </section>
+                                    <!-- Фильтр товаров -->
+            <section class="flexibleWrapper ">
+                <h1>Хиты продаж</h1>
+                <div class="salesFilter flexibleWrapper">
+                    <input class="radioSwitch allItem" type="radio" name="switcherFilter" id="allSwitch" checked>
+                    <label for="allSwitch" class=" allFilter"></label>
+
+                    <input class="radioSwitch" type="radio" name="switcherFilter" id="gsSwitch">
+                    <label class=" gsFilter" for="gsSwitch"></label>
+
+                    <input class="radioSwitch" type="radio" name="switcherFilter" id="ecsSwitch">
+                    <label class=" ecsFilter" for="ecsSwitch"></label>
+
+                    <input class="radioSwitch" type="radio" name="switcherFilter" id="swSwitch">
+                    <label class=" swFilter" for="swSwitch"></label>
+                                    <!-- Карточки товаров -->
+                    <div class="filterItem flexibleWrapper allItem ecsItem">
+                        <img src="media/Ecs.WEBP" class="filterPic" alt="Товар электросамокат">
+                        <p class="posPic">Электросамокат
+                            <br>HIMO L2
+                            <br>Цена 35 000₽
+                        </p>
+                    </div>
+                <div class="filterItem flexibleWrapper allItem gsItem">
+                        <img src="media/Gs.WEBP" class="filterPic" alt="Товар гироскутер">
+                        <p class="posPic">Гироскутер
+                            <br>GT 6.5
+                            <br>Цена 15 000₽
+                        </p>
+                    </div>
+                    <div class="filterItem flexibleWrapper allItem swItem">
+                        <img src="media/sw.WEBP" class="filterPic" alt="Товар сигвей">
+                        <p class="posPic">Сигвей
+                            <br>MINI ROBOT 54V
+                            <br>Цена 17000₽
+                        </p>
+                    </div>
+                </div>
+            </section>
+                                    <!-- О консультантах  -->
+            <section>
+                <p class="addInfo">В нашей компании работают люди с большим опытом пользования электротранспортом.
+                    Разъяснят все нюансы, помогут выбрать тот вид и модель электротранспорта, которые будут для вас
+                    идеальны!</p>
+            </section>
+                                    <!-- Некоторые бренды  -->
+            <section class="flexibleWrapper">
+                <h2 class="brandText">Бренды, которые нам доверяют</h2>
+                <img src="media/brands.min.svg" class="brandPic" alt="Некоторые бренды магазина">
+            </section>
+                                    <!-- Полезная информация  -->
+            <section class="flexibleWrapper">
+                <h1 class="benefitHead">Почему приобретение сигвея, гироскутера или самоката — это выгодно?</h1>
+                <img src="media/benefits.WEBP" class="benefitPic" alt="Люди в парке на гироскутерах">
+                <article class="benefitText">
+                    <ul>
+                            <li><span class="benefitList">Это относительно недорого.</span> У всех перечисленных видов
+                                электротранспорта широкий ценовой и модельный диапазон, что позволит выбрать модель
+                                подходящую именно вам.</li>
+                            <li><span class="benefitList">Это удобно.</span> Перечисленные виды электротранспорта не
+                                требуют сложного обслуживания, не занимают много места и просты в освоении.</li>
+                            <li><span class="benefitList">Это актуально.</span> Несмотря на достаточно широкое
+                                распространение перечисленного электротранспорта, окружающие еще не привыкли к нему и
+                                поэтому ваше появление на нем будет удивлять и приковывать внимание. Также использование
+                                электротранспорта вносит небольшой, но все же вклад в заботу об экологии и природе.</li>
+                    </ul>
+                </article>
+            </section>
+                                    <!-- Информация о компании -->
+            <section class="flexibleWrapper">
+                <p class="addInfo">Компания My-Giro с 2010 года занимается продажей электротранспорта от
+                    производителей-лидеров в своей сфере. Обеспечиваем лучшее качество обслуживания клиентов на рынке,
+                    следим за трендами и стремимся к производству собственных гироскутеров. Мы считаем, что за
+                    электротранспортом будущее. А вы?
+                </p>
+                                <!-- Форма для подписки на email-рассылки.   -->
+                <div class="companyForm flexibleWrapper">
+                    <span class="formInfo">Подпишитесь на наши рассылки</span>
+                    <form>
+                        <div class="userPos flexibleWrapper">
+                            <input type="text" placeholder="Ваше имя" name="userData" class="userField">
+                            <input type="email" placeholder="Ваша электронная почта" name="userData" class="userField">
+                        </div>
+                        <div class="submitPos flexibleWrapper">
+                            <button type="submit" name="userData" class="submitData">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+                                    <!-- Отзывы -->
+            <section class="flexibleWrapper">
+                <article class="flexibleWrapper">
+                    <img src="media/rw1.png" alt="фото клиента">
+                    <p class="addInfo">“Очень вежливые консультанты. О сигвее, как и об электротранспорте вообще, ничего
+                        не знала, сотрудники все очень подробно и просто разъяснили, дали советы. Купила, теперь с
+                        интересом осваиваю. Отличный магазин!” — Евгения</p>
+                </article>
+                <article class="flexibleWrapper">
+                    <img src="media/rw2.png" alt="фото клиента">
+                    <p class="addInfo">“Ребенок давно просил купить ему электросамокат — хорошо в них разбирается и
+                        хотел сам разговаривать с консультантами. Связались с магазином, объяснили ситуацию.
+                        Консультанты подробно выслушали ребенка, дали советы по выбору. Заказали, купили, довольны”. —
+                        Дмитрий</p>
+                </article>
+                <article class="flexibleWrapper">
+                    <img src="media/rw3.png" alt="фото клиента">
+                    <p class="addInfo">“Давно пользуюсь различными видами электротранспорта, поэтому знаю все нюансы.
+                        Решила приобрести новую модель гироскутера, выбрала одну модель, но консультанты подсказали мне
+                        другую, детально сравнив их между собой. Приобрела ту модель, что мне советовали и ни секунды не
+                        пожалела — с удовольствием катаюсь!” — Эльвира</p>
+                </article>
+                        <!--  Кнопка, позволяющая вернуться наверх. -->
+                        <a href="#topHead" class="AnkerBtn"><img src="media/ArrowTop.min.svg" alt="Кнопка, позволяющая вернуться наверх"></a>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
