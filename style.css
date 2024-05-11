@@ -172,6 +172,8 @@ button{
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
+	 scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
     border: 10px solid black;
     border-radius: 70px;
 }
